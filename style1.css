@@ -1,0 +1,80 @@
+*{   margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body {
+    background-color: #654062;
+}
+
+
+ 
+
+
+
+ 
+ 
+ 
+ 
+                                                          /* menu start here  */
+ .menu 
+  {display: flex;
+justify-content: end;
+position: relative;
+
+}  
+.services,   
+.ganer,
+#home{
+    margin: 10px;
+}
+
+.services ul,
+.ganer ul  {
+    position: absolute;
+    padding: 10px;
+    margin:10px;
+    background-color:#c3aed6;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: all 0.4s ease ;
+    pointer-events: none;
+}
+
+.services li:hover{
+    background-color: brown;
+}
+   
+
+.services li,
+.ganer li {
+    list-style: none;
+    color: black;
+}
+
+
+.services a,
+.ganer a{
+
+    text-decoration: none;
+}
+
+.services button :focus + ul,
+.ganer button :focus+ ul {
+opacity:1;
+transform: translateY(0px);
+cursor: pointer;
+}
+
+
+.dropdown button{
+    cursor: pointer;
+}
+.ganer button:focus + ul ,
+.services button:focus + ul{
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(0px);
+}
